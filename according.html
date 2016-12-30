@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").hide();
+            $("h1").hover(function(){
+//                $("p").slideToggle(1000);
+                $(this).next().stop().slideToggle();
+            });
+        });
+    </script>
+    <style>
+        .container{
+            width: 600px;
+            margin: auto;
+        }
+        h1{
+            cursor: pointer;
+            margin: 0;
+        }
+/*
+        P{
+            display: none;
+        }
+*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Qwerty</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur non officiis nisi dignissimos animi asperiores nostrum aspernatur beatae repudiandae! Placeat minima quae iste fugit non nesciunt iusto neque aliquam dolorum!
+        </p>
+        <h1>Qwerty</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur non officiis nisi dignissimos animi asperiores nostrum aspernatur beatae repudiandae! Placeat minima quae iste fugit non nesciunt iusto neque aliquam dolorum!
+        </p><h1>Qwerty</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur non officiis nisi dignissimos animi asperiores nostrum aspernatur beatae repudiandae! Placeat minima quae iste fugit non nesciunt iusto neque aliquam dolorum!
+        </p>
+    </div>
+</body>
+</html>
